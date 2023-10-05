@@ -1,0 +1,218 @@
+
+:root {
+    --primeColor: white;
+    --seconaryColor: black;
+    --headerFontFamily: 'Courier New', Courier, monospace;
+    --fontFamily:'Times New Roman', Times, serif ;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-size:62.5%;
+    overflow-x: hidden;
+    background-color: var(--primeColor);
+}
+
+.header {
+    padding-left: 1rem;
+    width: 100vw;
+    /* height: 5vh; */
+    background-color: var(--seconaryColor);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.siteTitle {
+    color: var(--primeColor);
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family: var(--headerFontFamily);
+}
+
+.openingImg  {
+    width: 90vw;
+    height: 70vh;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    border: .6rem solid var(--seconaryColor);
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: solid .4rem var(--seconaryColor);
+    border-bottom: solid .4rem var(--seconaryColor);
+    margin-bottom: 5vh;
+}
+
+.about h2 {
+    font-size: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: var(--seconaryColor);
+    font-family: var(--headerFontFamily);
+}
+
+.about p {
+    font-size: 2rem;
+    text-align: center;
+    width: 80vw;
+    padding-bottom: 2rem;
+    color: var(--seconaryColor);
+    font-family: var(--fontFamily);
+}
+
+.galary {
+    margin-bottom: 5vh;
+}
+
+.galaryContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 95vw;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    margin-bottom: 4rem;
+
+}
+
+.display {
+    width: 90%;
+    height: 40rem;
+    border: .5rem solid var(--seconaryColor);
+}
+
+.artTitle {
+    font-size: 8rem;
+    color: var(--seconaryColor);
+    margin-bottom: 1rem;
+    font-family: var(--headerFontFamily);
+}
+
+.createdDate {
+    font-size: 2rem;
+    color: var(--seconaryColor);
+    font-family: var(--headerFontFamily);
+}
+
+.artDis  {
+    margin-top: 1rem;
+    font-size: 3rem;
+    color: var(--seconaryColor);
+    font-family: var(--fontFamily);
+}
+
+.footer {
+    width: 100vw;
+    background-color: var(--seconaryColor);
+    display: flex;
+    gap: 4rem;
+
+}
+
+.footerTitle {
+    color: var(--primeColor);
+    font-family: var(--headerFontFamily);
+    font-size: 3rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+.linkContainer {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+
+.linkContainer ul {
+    list-style: none;
+}
+
+.offSiteLink {
+    color: var(--primeColor);
+    font-family: var(--fontFamily);
+    font-size: 1.5rem;
+}
+
+.credit {
+    font-size: 1rem;
+    margin-left: 1rem;
+    color: var(--primeColor);
+    font-family: var(--fontFamily);
+
+}
+
+@media   (max-width: 1541px){
+
+    .about h2 {
+        font-size: 3rem;
+    }
+
+    .about p {
+        font-size: 1.5rem;
+        width: 95%;
+    }
+
+    .galaryContainer {
+        width: 100%;
+        grid-template-columns: 1fr;
+        margin-bottom: 5rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .display {
+        width: 100%;
+        height: 25rem;
+        border: .5rem solid var(--seconaryColor);
+    }
+
+    .artTitle {
+        font-size: 6rem;
+        color: var(--seconaryColor);
+        margin-bottom: 1rem;
+        font-family: var(--headerFontFamily);
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
+    
+    .createdDate {
+        font-size: 2rem;
+        color: var(--seconaryColor);
+        font-family: var(--headerFontFamily);
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
+    
+    .artDis  {
+        margin-top: 1rem;
+        font-size: 2rem;
+        color: var(--seconaryColor);
+        font-family: var(--fontFamily);
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
+
+    .footer {
+        gap: 0;
+        padding-right: 2rem;
+    }
+    
+}
